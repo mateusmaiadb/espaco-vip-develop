@@ -1,35 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StatusBar } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 
-import Barbeiro from './Barbeiro';
+import Routes from './src/routes';
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="light" />
-      <Text style={styles.title}>Sejam muito bem vindos(as)!</Text>
+    <NavigationContainer>
+      <StatusBar backgroundColor='#232630' barStyle='light-content' />
+      
+      <Routes />
 
-      <Barbeiro/>
-      <Barbeiro/>
-      <Barbeiro/>
-      <Barbeiro/>
-    </View>
+
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#2A2A2A',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
 
-  title: {
-    color: '#fff',
-    fontSize: 20,
-    marginBottom: 15
-  },
-
-});

@@ -2,11 +2,18 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Barbeiro from './Barbeiro';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+      <Text style={styles.title}>Sejam muito bem vindos(as)!</Text>
+
+      <Barbeiro/>
+      <Barbeiro/>
+      <Barbeiro/>
+      <Barbeiro/>
     </View>
   );
 }
@@ -14,8 +21,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#2A2A2A',
     justifyContent: 'center',
+    alignItems: 'center'
   },
+
+  title: {
+    color: '#fff',
+    fontSize: 20,
+    marginBottom: 15
+  },
+
 });

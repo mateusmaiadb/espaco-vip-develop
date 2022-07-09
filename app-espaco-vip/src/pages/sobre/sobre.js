@@ -6,8 +6,10 @@ export default function Sobre() {
         <View style={styles.card}>
             <Text style={styles.cardTitle}>Mais sobre nós!</Text>
             {/* <Text style={styles.cardSubtitle}>Nome:</Text> */}
+            
 
         </View>
+        
     )
 }
 

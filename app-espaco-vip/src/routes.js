@@ -10,9 +10,9 @@ const Stack = createNativeStackNavigator();
 function Routes() {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+            <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
 
-            <Stack.Screen name="Sobre" component={Sobre} options={{title:'Sobre', headerStyle:{backgroundColor: 'yellow'}}} />
+            <Stack.Screen name="Sobre" component={Sobre} options={{ headerShown: false}}  />
         </Stack.Navigator>
     );
 }
